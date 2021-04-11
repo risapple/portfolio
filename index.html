@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>松本理沙ポートフォリオ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="top">
+    <img src="images/top.jpg" alt="ポートフォリオ">
+    <span></span><span></span><span></span>
+  </header>
+
+  <section class="profile">
+    <img src="images/me.jpg" alt="私の写真">
+    <div class="info">
+      <h1>はじめまして松本理沙です</h1>
+      <p>1977年10月30日<br>福岡生まれ、ほぼ福岡育ち</p>
+      <p>短大卒業後、洋服の販売や飲食などサービス業で働いてきました。仕事をする上での目標は「感動を提供すること」で満足+αを心掛けています。近年お客様の求めるものがWebを介していると肌で感じます。学んだWebデザインを活かして、より多くの人の役に立ちたいです。</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <h1>Webデザインへ活かしたい私の特徴</h1>
+    <div class="chara">
+      <div class="point">
+        <h2>カラー</h2>
+        <p>学生の頃からカラーに興味があり友人から48色色鉛筆をもらったり、色彩検定を個人的に取得したりしました。商品ディスプレイやカラーコーディネートなどの経験があります。</p>
+      </div>
+      <div class="point">
+        <h2>旅行</h2>
+        <p>光溢れる自然の景色も計算し尽くされた都会の景観もどちらも味わい深い感動を与えてくれます。国や町によって感じる空気感のバランス、それぞれの良さを発見することが面白いです。</p>
+      </div>
+      <div class="point">
+        <h2>マネジメント</h2>
+        <p>優先順位をつけながら様々な業務を行う経験をしました。たくさんの人が関わってくれることで嬉しい結果が生まれることを知り、コミュニケーションを積極的にとるようになりました。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="work">
+    <h2>作ったもの</h2>
+    <p>福岡観光のサイトはAdobe XDを使用してデザインのみ。<br>にわかせんぺいのみイラレで描きました。</p>
+    <div class="fuk">
+      <div class="ss">
+        <img src="images/fuk1.jpg" alt="福岡">
+      </div>
+      <div class="ss">
+        <img src="images/fuk2.jpg" alt="福岡の祭り">
+      </div>
+      <div class="ss">
+        <img src="images/fuk3.jpg" alt="福岡のグルメ">
+      </div>
+      <div class="ss">
+        <img src="images/fuk4.jpg" alt="福岡の自然">
+      </div>
+    </div>
+    <div class="bnr">
+      <div class="item">
+        <img src="images/banner_trace8.jpg" alt="トレース1">
+      </div>
+      <div class="item">
+        <img src="images/banner_trace9-2.jpg" alt="トレース2">
+      </div>
+      <div class="item">
+        <img src="images/banner_arrange1.jpg" alt="バナーアレンジ1">
+      </div>
+      <div class="item">
+        <img src="images/banner_arrange2.jpg" alt="バナーアレンジ2">
+      </div>
+      <div class="item">
+        <img src="images/banner_arrange3.jpg" alt="バナーアレンジ3">
+      </div>
+      <div class="item">
+        <img src="images/banner_arrange4.jpg" alt="バナーアレンジ4">
+      </div>
+      <div class="item">
+        <img src="images/banner_arrange5.jpg" alt="バナーアレンジ5">
+      </div>
+      <div class="item">
+        <img src="images/banner_arrange6.jpg" alt="バナーアレンジ6">
+      </div>
+    </div>
+  </section>
+
+  <section class="thought">
+    <h2>Webデザインで今届けたいのは笑顔と元気</h2>
+    <p>誰かの必要なことや伝えたいことの架け橋となれるWebデザインは素敵な仕事だと思います。</p>
+    <p>作成したデザインやサイトを見て「こうしたい」という行動の力になったり、楽しみを見つけて「明日もがんばろう」と笑顔になってもらえるようにスキルを磨いていきます。</p>    
+  </section>
+
+  <p id="pagetop">
+    <a href="#"><span>↑</span>
+    <br>top</a>
+  </p>
+
+  <footer class="thanks">
+    <p>お忙しい中ご覧頂きまして本当にありがとうございます!!</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="pageTop.js"></script>
+  <script>
+    $(function() {
+      var pagetop = $('#pagetop');
+      pagetop.hide();
+      $(window).scroll(function() {
+        if($(this).scrollTop() > 700) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+    });
+    pagetop.click(function() {
+      $('body, html').animate({ 
+        scrollTop: 0
+      }, 500);
+        return false
+      });
+    });
+  </script>
+</body>
+</html>
